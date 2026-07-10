@@ -1,58 +1,58 @@
 # World Cup Manager
 
-Sistema de gerenciamento de times e jogadores de futebol em C, com simulação de partidas e disputa de Copa do Mundo. Desenvolvido para rodar no terminal do Windows.
+A football (soccer) team and player management system written in C, featuring match simulation and a full World Cup tournament. Built to run in the Windows terminal.
 
-## Como compilar e rodar
+## How to compile and run
 
-> ⚠️ Este projeto foi desenvolvido para **Windows** (usa comandos como `cls` e `chcp`).
+> ⚠️ This project was built for **Windows** (uses commands like `cls` and `chcp`).
 
-No terminal (Prompt de Comando, PowerShell ou Git Bash), dentro da pasta do projeto:
+In your terminal (Command Prompt, PowerShell, or Git Bash), inside the project folder:
 
 ```bash
 gcc main.c -o world-cup-manager
 ```
 
-Depois, execute:
+Then run it:
 
 ```bash
 ./world-cup-manager
 ```
 
-## Funcionalidades
+## Features
 
-### Sistema de usuários
-- Cadastro e login de usuários
-- Sessão salva (não precisa logar toda vez)
-- Perfil de **Administrador** e perfil de **Treinador (Coach)**
+### User system
+- User registration and login
+- Persistent session (no need to log in every time)
+- **Administrator** and **Coach** profiles
 
-### Administrador
-- Criar, listar, editar e excluir times
-- Criar, editar e excluir jogadores
-- Salvar alterações no sistema
+### Administrator
+- Create, list, edit, and delete teams
+- Create, edit, and delete players
+- Save system changes
 
-### Treinador (Coach)
-- Escolher um time para gerenciar
-- Montar elenco: convocar e dispensar jogadores (limite de 15 por time)
-- Definir titulares
-- Ver estatísticas do time
-- Simular partidas
-- Disputar a Copa do Mundo (fase de grupos + mata-mata)
-- Acompanhar artilharia e assistências dos jogadores
+### Coach
+- Choose a team to manage
+- Build the squad: call up and release players (15-player limit per team)
+- Set starting lineup
+- View team statistics
+- Simulate matches
+- Compete in the World Cup (group stage + knockout stage)
+- Track player goals and assists
 
-### Partidas
-- Simulação de resultados com base na força dos times (`overallStrength`)
-- Sorteio de artilheiros e assistências
-- Tabelas de classificação por grupo
+### Matches
+- Match results simulated based on team strength (`overallStrength`)
+- Goal scorers and assists drawn randomly
+- Group standings tables
 
-## Estrutura do projeto
+## Project structure
 
-| Arquivo | Descrição |
+| File | Description |
 |---|---|
-| `main.c` | Menu principal e loop do jogo |
-| `manager.c` / `manager.h` | Gerenciamento de usuários, times e jogadores |
-| `matches.c` / `matches.h` | Simulação de partidas e Copa do Mundo |
-| `inicializate.c` | Inicialização de dados padrão do sistema |
+| `main.c` | Main menu and game loop |
+| `manager.c` / `manager.h` | User, team, and player management |
+| `matches.c` / `matches.h` | Match simulation and World Cup logic |
+| `inicializate.c` | Default system data initialization |
 
-## Autor
+## Author
 
 Nicolas Venceslau
